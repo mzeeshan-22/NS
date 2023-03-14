@@ -20,7 +20,7 @@ int main(){
     cin>>str;
     cout<<"Encrypted string: "<<encryption(str)<<endl;
     int dcrpt;
-    cout<<"~ Press 1 to decrypt the string ~ ";
+    cout<<"~ Press 1 to decrypt the string ~ "<<endl;
     cin>>dcrpt;
     if (dcrpt == 1){
         cout<<"Decrypted string: "<<decryption(encryption(str))<<endl;
