@@ -13,14 +13,21 @@ string decryption(string str){
     }
     return str;
 }
+
 int main(){
     string str;
     cout<<"Enter String: ";
     cin>>str;
     cout<<"Encrypted string: "<<encryption(str)<<endl;
-    string dcrpt;
-    cout<<"type dcrpt to check decrypted string ";
+    int dcrpt;
+    cout<<"~ Press 1 to decrypt the string ~ ";
     cin>>dcrpt;
-    cout<<"Decrypted string: "<<decryption(str)<<endl;
+    if (dcrpt == 1){
+        cout<<"Decrypted string: "<<decryption(encryption(str))<<endl;
+    }
+    else {
+        cout<<"Not decrypted!"<<endl;
+    }
+    
     return 0;
 }
